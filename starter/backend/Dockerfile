@@ -14,7 +14,6 @@ RUN apk update && \
   libffi-dev \
   && pip install pipenv
 
-ENV  CFLAGS="Wno-error=incompatible-pointer-types"
 RUN mkdir -p /var/www/app && mkdir /app
 
 COPY Pipfile* /app
